@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+    <link rel="stylesheet" href="css/styled.css" />
+
+    <title>WebSite</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_top">
+        <div class="container">
+          <h1 class="header_title">Polskie Elektrownie Jądrowe sp. z o. o.</h1>
+        </div>
+      </div>
+      <div class="header_bot line">
+        <div class="navbar">
+          <div class="container nav-container">
+            <input class="checkbox" type="checkbox" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+
+            <ul class="menu-items nav">
+              <li><a href="#O_projekcie">O projekcie</a></li>
+              <li><a href="#O_spółce">O spółce</a></li>
+              <li><a href="#Opinie">Opinie</a></li>
+              <li><a href="#Dla_inwestorów">Dla inwestorów</a></li>
+              <li><a href="#Jak_zacząć?">Jak zacząć?</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="section-1">
+        <div class="container_form">
+          <div class="form_box">
+            <form class="transparent" id="myForm">
+              <div class="form-inner">
+                <h3 class="form_title">Zarejestruj</h3>
+                <input
+                  type="text"
+                  name="subid"
+                  value=""
+                  style="display: none"
+                />
+                <input
+                  class="form_name modal-form_input"
+                  type="text"
+                  placeholder="Imię"
+                  id="firstName"
+                  name="firstName"
+                  required
+                  pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{1,}"
+                />
+                <input
+                  class="form_name2 modal-form_input"
+                  type="text"
+                  placeholder="Nazwisko"
+                  id="lastName"
+                  name="lastName"
+                  required
+                  pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{1,}"
+                />
+
+                <input
+                  class="form_email modal-form_input"
+                  type="email"
+                  placeholder="E-mail"
+                  id="email"
+                  name="email"
+                  required
+                />
+                <input
+                  class="form_tel modal-form_input"
+                  type="tel"
+                  id="phone1"
+                  name="phone"
+                  pattern="[0-9]{10}"
+                  required
+                  style="padding-left: 55px; width: 100% !important"
+                />
+                <input
+                  class="form_submit"
+                  type="submit"
+                  value="zarejestruj się"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="support">
+            <h2 class="supp_title">Dzięki wsparciu</h2>
+            <div class="sup_img">
+              <img
+                src="./img/sup_logo1.png"
+                class="oneImg"
+                alt="logo_ministerstwo_klimatu"
+              />
+              <img src="/img/sup_logo2.png" class="twoImg" alt="logo_seim" />
+            </div>
+            <video
+              class="video"
+              src="./video.mp4"
+              controls=""
+              autoplay=""
+            ></video>
+          </div>
+        </div>
+      </div>
+      <div id="O_projekcie" class="section-2 container">
+        <div class="section-2_info" id="box1">
+          <h1 class="s2_title">O projekcie</h1>
+          <p class="section-2_text">
+            Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej oficjalnie
+            potwierdza, że inwestycje w pierwszą elektrownię jądrowe w Polsce są
+            zgodne z interesem publicznym oraz polityką prowadzoną przez
+            państwo, zwłaszcza polityką energetyczną. Każdy obywatel Polski
+            będzie mógł czerpać korzyści z energii wytwarzanej przez elektrownię
+            jądrowe.
+            <br /><br />
+            "Planowany projekt realizuje Polski Program Rozwoju Energii
+            Jądrowej, jest zgodny z Polityką Energetyczną Polski do 2040 roku
+            oraz odpowiada celom polityki klimatycznej Unii Europejskiej" -
+            głosi komunikat.
+            <br /><br />
+            <strong>
+              Aby rozpocząć pracę, prosimy o zarejestrowanie się na tej stronie
+              i dokonanie minimalnej wpłaty w wysokości 1100 złotych.</strong
+            >
+          </p>
+          <div class="s2_man_box" id="box3">
+            <h2 class="s2_man_name">Mateusz Berger</h2>
+            <p class="s2_man_info">
+              Prezes spółki Polskie Elektrownie Jądrowe (PEJ)
+            </p>
+          </div>
+        </div>
+
+        <div class="section-2_img">
+          <img src="./img/section-2_man.png " id="box2" alt="man" />
+        </div>
+      </div>
+
+      <div id="O_spółce" class="section-3">
+        <div class="container">
+          <div class="section-3_info">
+            <h1 class="s3_title s2_title">O spółce</h1>
+            <p class="s3_top_info">
+              Jak zaznaczono, elektrownia jądrowe ma na celu zrekompensowanie
+              przewidywanego wzrostu zapotrzebowania na energię elektryczną,
+              stabilizację dostaw energii oraz dywersyfikację źródeł energii w
+              <br />
+              kraju.
+              <br /><br />
+              Zgodnie z zezwoleniem, inwestor może złożyć podania o dalsze
+              decyzje administracyjne, zwłaszcza dotyczące określenia
+              lokalizacji. Według Ministerstwa Klimatu i Środowiska, decyzję
+              popiera 86% Polaków, z których większość wyraża zgodę na budowę
+              elektrowni atomowej w pobliżu swojego miejsca zamieszkania.
+              <br /><br />
+              W ramach Polskiego Programu Rozwoju Energii Jądrowej planowana
+              jest budowa dwóch elektrowni atomowych.
+            </p>
+          </div>
+          <div class="s3_bot_box">
+            <button class="s3_btn">Zarejestruj się i zarabiaj</button>
+            <p class="s3_bot_text">
+              Dane rejestrowe spółki: <br />
+              Polskie Elektrownie Jądrowe spółka z ograniczoną
+              odpowiedzialnością z siedzibą w Warszawie, ul. Mokotowska 49,
+              00-542 Warszawa, spółka wpisana do Rejestru przedsiębiorców
+              Krajowego Rejestru Sądowego prowadzonego przez Sąd Rejonowy dla m.
+              st. Warszawy w Warszawie, XII Wydział Gospodarczy Krajowego
+              Rejestru <br />
+              Sądowego pod numerem KRS: 0000347416, kapitał zakładowy
+              2.948.201.430 zł, NIP: 701 021 82 99, REGON: 142242032.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="Opinie" class="section-4">
+        <div class="container"></div>
+        <h1 class="s4_title s2_title">Opinie</h1>
+
+        <div class="swiper image-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <div class="img-container_slide">
+                  <img class="slide_img" src="./img/profile_1.png" alt="" />
+                </div>
+
+                <h3 class="slide_name">Mateusz morawecki</h3>
+                <p class="slide_years">39 lat - Kierowca</p>
+                <p class="slide_info">
+                  Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej
+                  oficjalnie potwierdza, że inwestycje w pierwszą elektrownię
+                  jądrowe w Polsce są zgodne z interesem publicznym oraz
+                  polityką prowadzoną przez państwo, zwłaszcza polityką
+                  energetyczną. Każdy obywatel Polski będzie mógł czerpać
+                  korzyści z energii wytwarzanej przez elektrownię jądrowe.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <div class="img-container_slide">
+                  <img class="slide_img" src="./img/profile_1.png" alt="" />
+                </div>
+
+                <h3 class="slide_name">Alina Borys</h3>
+                <p class="slide_years">36 lat - Warszawa</p>
+                <p class="slide_info">
+                  Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej
+                  oficjalnie potwierdza, że inwestycje w pierwszą elektrownię
+                  jądrowe w Polsce są zgodne z interesem publicznym oraz
+                  polityką prowadzoną przez państwo, zwłaszcza polityką
+                  energetyczną. Każdy obywatel Polski będzie mógł czerpać
+                  korzyści z energii wytwarzanej przez elektrownię jądrowe.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <div class="img-container_slide">
+                  <img class="slide_img" src="./img/profile_1.png" alt="" />
+                </div>
+
+                <h3 class="slide_name">Andrii Dovbysh</h3>
+                <p class="slide_years">43 lat - Lviv</p>
+                <p class="slide_info">
+                  Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej
+                  oficjalnie potwierdza, że inwestycje w pierwszą elektrownię
+                  jądrowe w Polsce są zgodne z interesem publicznym oraz
+                  polityką prowadzoną przez państwo, zwłaszcza polityką
+                  energetyczną. Każdy obywatel Polski będzie mógł czerpać
+                  korzyści z energii wytwarzanej przez elektrownię jądrowe.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <div class="img-container_slide">
+                  <img class="slide_img" src="./img/profile_1.png" alt="" />
+                </div>
+
+                <h3 class="slide_name">Igor Lebediev</h3>
+                <p class="slide_years">65 lat - Madrid</p>
+                <p class="slide_info">
+                  Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej
+                  oficjalnie potwierdza, że inwestycje w pierwszą elektrownię
+                  jądrowe w Polsce są zgodne z interesem publicznym oraz
+                  polityką prowadzoną przez państwo, zwłaszcza polityką
+                  energetyczną. Każdy obywatel Polski będzie mógł czerpać
+                  korzyści z energii wytwarzanej przez elektrownię jądrowe.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <div class="img-container_slide">
+                  <img class="slide_img" src="./img/profile_1.png" alt="" />
+                </div>
+
+                <h3 class="slide_name">Alex Mbappe</h3>
+                <p class="slide_years">18 lat - Barselona</p>
+                <p class="slide_info">
+                  Decyzja Ministerstwa Klimatu Rzeczypospolitej Polskiej
+                  oficjalnie potwierdza, że inwestycje w pierwszą elektrownię
+                  jądrowe w Polsce są zgodne z interesem publicznym oraz
+                  polityką prowadzoną przez państwo, zwłaszcza polityką
+                  energetyczną. Każdy obywatel Polski będzie mógł czerpać
+                  korzyści z energii wytwarzanej przez elektrownię jądrowe.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div id="Dla_inwestorów" class="section-5">
+        <div class="range container">
+          <div class="range_titleblock">
+            <h1 class="range_title">Ile bede zarabial?</h1>
+            <p class="range_info">Twoja inwestycja</p>
+          </div>
+          <div class="range_container">
+            <div class="range-slider">
+              <input type="text" class="js-range-slider" value="" />
+            </div>
+            <div class="extra-controls">
+              <label for="text" class="js-input_info">Zarobisz</label>
+              <div class="range_input">
+                <input type="text" class="js-input" value="0" />
+              </div>
+              <div class="range_btn">Dołącz do nas</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div id="Jak_zacząć?" class="section-6">
+        <div class="container">
+          <div class="s6-info">
+            <div class="profit">
+              <h3 class="profit_title">
+                Dlaczego jest to korzystne dla zwyklych obywateli
+              </h3>
+              <ul class="profit_list">
+                <li class="profit_item">
+                  <img
+                    src="/img/icon_diagram.png"
+                    alt=""
+                    class="profit_image"
+                  />
+                  <p class="profit_info">
+                    Nowy projekt, który historycznie wpłynie na gospodarkę kraju
+                    i każdego obywatela.
+                  </p>
+                </li>
+                <li class="profit_item">
+                  <img src="/img/icon_money.png" alt="" class="profit_image" />
+                  <p class="profit_info">
+                    Zarabiaj od 15 000 złotych już od pierwszego miesiąca
+                  </p>
+                </li>
+                <li class="profit_item">
+                  <img src="/img/icon_calc.png" alt="" class="profit_image" />
+                  <p class="profit_info">
+                    Możliwość szybkiej wypłaty zarobków za pomocą dowolnego
+                    wygodnego systemu płatności lub karty bankowej
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="accelerator">
+              <h3 class="accelerator_title">
+                Jak zacząć zarabiać dzięki energii jądrowej?
+              </h3>
+              <ul class="accelerator_list">
+                <li class="accelerator_item">
+                  <p class="accelerator_info">
+                    1.Wypelnij formularz rejestracyjny na tej stronie.
+                  </p>
+                </li>
+                <li class="accelerator_item">
+                  <p class="accelerator_info">
+                    2.Odbierz telefon od naszego menedżera, aby potwierdzić
+                    rejestrację i dalszą pracę na platformie.
+                  </p>
+                </li>
+                <li class="accelerator_item">
+                  <p class="accelerator_info">
+                    3.Zarabiaj pasywnie co miesiąc dzięki inwestycji w wysokości
+                    1100 złotych, gdy rozpoczniesz współpracę z naszym projektem
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form_bottom">
+        <div class="form_box2">
+          <form class="transparent" id="myForm1">
+            <div class="form-inner">
+              <h3 class="form_title">Zarejestruj</h3>
+              <input type="text" name="subid" value="" style="display: none" />
+              <input
+                class="form_name modal-form_input"
+                type="text"
+                placeholder="Imię"
+                id="firstName"
+                name="firstName"
+                required
+                pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{1,}"
+              />
+              <input
+                class="form_name2 modal-form_input"
+                type="text"
+                placeholder="Nazwisko"
+                id="lastName"
+                name="lastName"
+                required
+                pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{1,}"
+              />
+
+              <input
+                class="form_email modal-form_input"
+                type="email"
+                placeholder="E-mail"
+                id="email"
+                name="email"
+                required
+              />
+              <input
+                class="form_tel modal-form_input"
+                type="tel"
+                id="phone2"
+                name="phone"
+                pattern="[0-9]{10}"
+                required
+              />
+              <input
+                class="form_submit"
+                type="submit"
+                value="zarejestruj się"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_box container">
+        <div class="adress">
+          <p class="adress_info">
+            Polskie Electrownie Jadrowe sp. z o.o.<br />
+            Aleje Jerozolimskie 132/136, 02-305 Warszawa<br />
+            <a class="contact-tel-link" href="tel:+48223402980"
+              >Tel.: (+48 22) 340 2980</a
+            >
+          </p>
+        </div>
+        <div class="footer-logo">
+          <a href="https://ua.linkedin.com/"
+            ><img src="./img/lincedin.png" alt="lincedin"
+          /></a>
+          <a href="https://twitter.com/?lang=ru"
+            ><img src="./img/twitter.png" alt="twitter"
+          /></a>
+        </div>
+        <div class="footer_info">
+          <a href="">Kontakt</a>
+          <a class="polytika" href="">Polityka prywatnosci</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script type="module" src="/index.js"></script>
+    <script src="./js/intlTelInput.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/jquery.maskedinput.js"></script>
+    <script>
+      var phone1 = document.getElementById("phone1");
+      var phone2 = document.getElementById("phone2");
+
+      var iti1 = intlTelInput(phone1, {
+        autoPlaceholder: false,
+        autoHideDialCode: false,
+        preferredCountries: ["AU", "GB", "IE", "DE"],
+        separateDialCode: false,
+        formatOnDisplay: false,
+        geoIpLookup: function (callback) {
+          $.get(
+            "https://get.geojs.io/v1/ip/country.json",
+            function () {}
+          ).always(function (resp) {
+            const countryCode = resp && resp.country ? resp.country : "AU";
+            document.querySelector('input[name="subid"]').value =
+              countryCode.toUpperCase();
+            callback(countryCode);
+          });
+        },
+        initialCountry: "auto",
+        hiddenInput: "full_number",
+        nationalMode: false,
+        placeholderNumberType: "MOBILE",
+      });
+
+      phone1.addEventListener("countrychange", function () {
+        var selectedCountry = iti1.getSelectedCountryData().iso2;
+        document.querySelector('input[name="subid"]').value = selectedCountry;
+      });
+
+      var iti2 = intlTelInput(phone2, {
+        autoPlaceholder: false,
+        autoHideDialCode: false,
+        preferredCountries: ["AU", "GB", "IE", "DE"],
+        separateDialCode: false,
+        formatOnDisplay: false,
+        geoIpLookup: function (callback) {
+          $.get(
+            "https://get.geojs.io/v1/ip/country.json",
+            function () {}
+          ).always(function (resp) {
+            const countryCode = resp && resp.country ? resp.country : "AU";
+            document.querySelector('input[name="subid"]').value =
+              countryCode.toUpperCase();
+            callback(countryCode);
+          });
+        },
+        initialCountry: "auto",
+        hiddenInput: "full_number",
+        nationalMode: false,
+        placeholderNumberType: "MOBILE",
+      });
+
+      phone2.addEventListener("countrychange", function () {
+        var selectedCountry = iti2.getSelectedCountryData().iso2;
+        document.querySelector('input[name="subid"]').value = selectedCountry;
+      });
+    </script>
+  </body>
+</html>
